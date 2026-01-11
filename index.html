@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thế Giới Động Vật</title>
+    <link href="trangchu.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Khám Phá Thế Giới Động Vật</h1>
+    <div class="dongvat-container" id="dongvatList"></div>
+   
+    <div id="chan"></div>
+
+
+    <script>
+        // Load footer dùng chung
+        fetch('chan.html')
+          .then(res => res.text())
+          .then(data => { document.getElementById('chan').innerHTML = data; });
+    </script>
+    <script src="trangchu.js"></script>
+</body>
+</html>
